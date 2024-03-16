@@ -9,6 +9,7 @@ interface TextProps extends RNTextProps {
     light?: boolean;
     poppins?: boolean;
     openSans?: boolean;
+    Inter?: boolean;
     color?: string;
     size?: string | number;
 }
@@ -47,6 +48,7 @@ light,
 style, 
 poppins,
 openSans,
+Inter,
 color,
 size,
 ...props
@@ -54,7 +56,7 @@ size,
   const fontName = useMemo(() =>
     FirstLetterInUppercase(
       Object.entries(
-        {poppins, openSans}
+        {poppins, openSans, Inter}
       )
     .filter(([_, value]) => value === true)
     .map((value) => value[0])[0] || "Poppins")

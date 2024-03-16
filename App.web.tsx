@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useFonts, OpenSans_400Regular, OpenSans_500Medium, OpenSans_300Light, OpenSans_600SemiBold, OpenSans_700Bold} from "@expo-google-fonts/open-sans"
 import { Poppins_400Regular, Poppins_500Medium, Poppins_300Light, Poppins_600SemiBold, Poppins_700Bold} from "@expo-google-fonts/poppins"
+import { Inter_400Regular, Inter_500Medium, Inter_300Light, Inter_600SemiBold, Inter_700Bold} from "@expo-google-fonts/inter"
 
 export default function App() {
 
@@ -18,7 +19,12 @@ export default function App() {
     Poppins_500Medium,
     Poppins_300Light,
     Poppins_600SemiBold,
-    Poppins_700Bold
+    Poppins_700Bold,
+    Inter_400Regular,
+    Inter_500Medium,
+    Inter_300Light,
+    Inter_600SemiBold,
+    Inter_700Bold
   });
 
   if (!fontsLoaded && !fontError) {
@@ -26,6 +32,7 @@ export default function App() {
   }
 
   return (
-    <div></div>
+
+    <View></View>
   );
 }
